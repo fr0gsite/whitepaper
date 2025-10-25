@@ -14,6 +14,10 @@ October 2025
 
 ---
 
+**Disclaimer**: This whitepaper represents the current vision and technical approach for Fr0g.site. Implementation details, timelines, and features may evolve based on technical considerations, community feedback, and regulatory requirements. Token economics and platform mechanics will be finalized through community governance processes.
+
+**Legal Notice**: This document is for informational purposes only and does not constitute investment advice, financial guidance, or a solicitation to purchase tokens. Potential participants should conduct their own research and consult with qualified professionals before making any decisions related to the platform or its tokens.
+
 ## Table of Contents
 
 1. [Executive Summary](#executive-summary)
@@ -25,142 +29,7 @@ October 2025
    - 4.3 [IPFS Network](#ipfs-network)
    - 4.4 [IPFS Gateway](#ipfs-gateway)
 5. [Platform Implementation](#platform-implementation)
-
-Fr0g.site implements comprehensive security measures to protect against attacks while maintaining an open, accessible platform.
-
-### Attack Vector Prevention
-
-#### Vote Manipulation Protection
-
-**Pattern Detection**: System monitors voting patterns to identify suspicious activity
-**Rate Limiting**: Cooldown periods prevent rapid-fire voting from single accounts
-**Behavioral Analysis**: Users exhibiting bot-like voting patterns face automatic penalties
-**Time-based Restrictions**: Minimum intervals required between votes to prevent spam
-
-#### DDoS & Function Spam Mitigation
-
-**Smart Contract Protection**: Built-in cooldowns prevent excessive function calls
-**Resource Management**: EOS resource system naturally limits high-frequency attacks
-**Load Distribution**: Multiple blockchain nodes distribute processing load
-**Automatic Throttling**: System reduces service to suspected attack sources
-
-#### Sybil Attack Resistance
-
-**Account Creation Costs**: Post-airdrop accounts require token expenditure
-**Resource Requirements**: New accounts need initial CPU/NET/RAM allocation
-**Time-based Restrictions**: New accounts have limited functionality initially
-**Social Verification**: Community can identify and report suspected fake accounts
-
-### Network Security
-
-#### Blockchain-Level Protection
-
-**Delegated Proof of Stake**: DPoS consensus mechanism resists traditional blockchain attacks
-**Block Producer Monitoring**: Community oversight of network validators
-**Resource Allocation**: Economic incentives align validator interests with network health
-
-#### Data Integrity
-
-**Immutable Records**: Blockchain storage ensures content metadata cannot be altered
-**Cryptographic Hashing**: IPFS content addressing prevents unauthorized modifications
-**Distributed Storage**: Content replicated across multiple IPFS nodes prevents loss
-
-### Ecosystem Applications
-
-Beyond the core media platform, Fr0g.site's infrastructure supports additional applications and games.
-
-#### Third-Party Development
-
-**Open Smart Contract Platform**: Developers can deploy custom applications on the network
-**Shared Infrastructure**: Applications benefit from existing user base and token economy
-**Composability**: New applications can integrate with existing platform features
-
-#### Example Applications
-
-**Collaborative Art Projects**: Applications similar to Reddit's r/place where users collaborate on digital canvases
-**Token Integration**: Pixel longevity or special features purchasable with platform tokens
-**Community Games**: Various gaming applications that leverage the platform's social features
-
-**Developer Benefits**:
-- Established user base
-- Integrated payment system
-- Decentralized hosting
-- Community governance framework
-
-<!-- TODO: Add comprehensive risk assessment and mitigation strategies -->
-<!-- TODO: Add security audit reports and penetration testing results -->
-<!-- TODO: Add incident response procedures and disaster recovery plans -->
-<!-- TODO: Add compliance with data protection regulations (GDPR, CCPA) -->
-
----
-
-## Roadmap
-
-*[Development roadmap to be defined based on community priorities and technical milestones]*
-
-### Phase 1: Foundation (Months 1-6)
-- Core smart contract deployment
-- Basic user interface development
-- Initial token distribution
-- Alpha testing with limited users
-
-### Phase 2: Community Growth (Months 6-12)
-- Public beta launch
-- Truster system implementation
-- Content moderation tools
-- Mobile application release
-
-### Phase 3: Ecosystem Expansion (Year 2)
-- Third-party developer tools
-- Advanced governance features
-- Cross-chain integration
-- Enterprise partnerships
-
-### Phase 4: Decentralization (Year 3+)
-- Full community governance
-- Autonomous operations
-- Global scalability
-- Ecosystem maturity
-
-<!-- TODO: Add specific milestones with dates and success metrics -->
-<!-- TODO: Add funding requirements for each development phase -->
-<!-- TODO: Add risk assessment for each roadmap milestone -->
-<!-- TODO: Add community growth targets and user adoption metrics -->
-
----
-
-## Conclusion
-
-Fr0g.site represents a fundamental reimagining of how digital media platforms can operate in the modern era. By leveraging blockchain technology, distributed storage, and community governance, the platform addresses the critical issues of censorship, unfair monetization, and centralized control that plague traditional social media.
-
-The platform's technical architecture, combining EOS blockchain efficiency with IPFS distributed storage, creates a robust foundation for sustainable growth. The carefully designed tokenomics ensure fair value distribution among all participants while maintaining long-term economic viability.
-
-Most importantly, Fr0g.site returns control to the users. Through democratic governance, transparent operations, and economic incentives aligned with community interests, the platform empowers users to shape their own digital environment.
-
-As the digital landscape continues to evolve, Fr0g.site offers a compelling alternative to corporate-controlled platforms—one that prioritizes user sovereignty, free expression, and fair value distribution. The future of social media lies not in the hands of a few powerful corporations, but in the collective wisdom and participation of the global community.
-
----
-
-## References
-
-*[References to be added based on technical implementations and industry standards]*
-
-1. EOS.IO Technical White Paper - https://github.com/EOSIO/Documentation
-2. IPFS Protocol Documentation - https://docs.ipfs.io/
-3. Delegated Proof of Stake Consensus - Academic research and implementations
-4. Decentralized Autonomous Organizations - Governance best practices
-5. Blockchain Social Media Platforms - Comparative analysis and lessons learned
-
-<!-- TODO: Add comprehensive bibliography with academic papers and research -->
-<!-- TODO: Add citations for specific claims and statistics throughout the document -->
-<!-- TODO: Add links to technical documentation and code repositories -->
-<!-- TODO: Add references to regulatory frameworks and legal precedents -->
-
----
-
-**Disclaimer**: This whitepaper represents the current vision and technical approach for Fr0g.site. Implementation details, timelines, and features may evolve based on technical considerations, community feedback, and regulatory requirements. Token economics and platform mechanics will be finalized through community governance processes.
-
-**Legal Notice**: This document is for informational purposes only and does not constitute investment advice, financial guidance, or a solicitation to purchase tokens. Potential participants should conduct their own research and consult with qualified professionals before making any decisions related to the platform or its tokens.Communication Flow](#communication-flow)
+   - 5.1 [Communication Flow](#communication-flow)
    - 5.2 [Smart Contract Functions](#smart-contract-functions)
    - 5.3 [User Interface](#user-interface)
 6. [Tokenomics](#tokenomics)
@@ -186,8 +55,6 @@ As the digital landscape continues to evolve, Fr0g.site offers a compelling alte
 <!-- TODO: Add section before Conclusion - Legal & Regulatory Considerations -->
 <!-- TODO: Add Financial Projections & Business Model -->
 <!-- TODO: Add API Documentation & Technical Specifications -->
-
----
 
 ## Executive Summary
 
@@ -732,5 +599,127 @@ Creating sustainable token demand is crucial for maintaining economic value and 
 <!-- TODO: Add creator monetization case studies and projections -->
 <!-- TODO: Add advertising revenue sharing models -->
 <!-- TODO: Add subscription and premium feature pricing strategies -->
+
+---
+
+## Security & Risk Mitigation
+
+
+Fr0g.site implements comprehensive security measures to protect against attacks while maintaining an open, accessible platform.
+
+### Attack Vector Prevention
+
+#### Vote Manipulation Protection
+
+**Pattern Detection**: System monitors voting patterns to identify suspicious activity
+**Rate Limiting**: Cooldown periods prevent rapid-fire voting from single accounts
+**Behavioral Analysis**: Users exhibiting bot-like voting patterns face automatic penalties
+**Time-based Restrictions**: Minimum intervals required between votes to prevent spam
+
+#### DDoS & Function Spam Mitigation
+
+**Smart Contract Protection**: Built-in cooldowns prevent excessive function calls
+**Resource Management**: EOS resource system naturally limits high-frequency attacks
+**Load Distribution**: Multiple blockchain nodes distribute processing load
+**Automatic Throttling**: System reduces service to suspected attack sources
+
+#### Sybil Attack Resistance
+
+**Account Creation Costs**: Post-airdrop accounts require token expenditure
+**Resource Requirements**: New accounts need initial CPU/NET/RAM allocation
+**Time-based Restrictions**: New accounts have limited functionality initially
+**Social Verification**: Community can identify and report suspected fake accounts
+
+### Network Security
+
+#### Blockchain-Level Protection
+
+**Delegated Proof of Stake**: DPoS consensus mechanism resists traditional blockchain attacks
+**Block Producer Monitoring**: Community oversight of network validators
+**Resource Allocation**: Economic incentives align validator interests with network health
+
+#### Data Integrity
+
+**Immutable Records**: Blockchain storage ensures content metadata cannot be altered
+**Cryptographic Hashing**: IPFS content addressing prevents unauthorized modifications
+**Distributed Storage**: Content replicated across multiple IPFS nodes prevents loss
+
+### Ecosystem Applications
+
+Beyond the core media platform, Fr0g.site's infrastructure supports additional applications and games.
+
+#### Third-Party Development
+
+**Open Smart Contract Platform**: Developers can deploy custom applications on the network
+**Shared Infrastructure**: Applications benefit from existing user base and token economy
+**Composability**: New applications can integrate with existing platform features
+
+#### Example Applications
+
+**Collaborative Art Projects**: Applications similar to Reddit's r/place where users collaborate on digital canvases
+**Token Integration**: Pixel longevity or special features purchasable with platform tokens
+**Community Games**: Various gaming applications that leverage the platform's social features
+
+**Developer Benefits**:
+- Established user base
+- Integrated payment system
+- Decentralized hosting
+- Community governance framework
+
+<!-- TODO: Add comprehensive risk assessment and mitigation strategies -->
+<!-- TODO: Add security audit reports and penetration testing results -->
+<!-- TODO: Add incident response procedures and disaster recovery plans -->
+<!-- TODO: Add compliance with data protection regulations (GDPR, CCPA) -->
+
+---
+
+## Roadmap
+
+### Phase 1: Foundation
+- Core smart contract deployment
+- Basic user interface development
+- Initial token distribution
+- Alpha testing with limited users
+
+### Phase 2: Community Growth
+- Public beta launch
+- User acquisition campaigns
+- Community engagement initiatives
+
+### Phase 3: Ecosystem Expansion
+- Cross-chain integration, enabling interoperability with other blockchains for token trading
+
+### Phase 4: Decentralization
+- Full community governance
+- Exit of founding team control
+
+<!-- TODO: Add specific milestones with dates and success metrics -->
+<!-- TODO: Add funding requirements for each development phase -->
+<!-- TODO: Add risk assessment for each roadmap milestone -->
+<!-- TODO: Add community growth targets and user adoption metrics -->
+
+---
+
+## Conclusion
+
+Fr0g.site represents a fundamental reimagining of how digital media platforms can operate in the modern era. By leveraging blockchain technology, distributed storage, and community governance, the platform addresses the critical issues of censorship, unfair monetization, and centralized control that plague traditional social media.
+
+The platform's technical architecture, combining EOS blockchain efficiency with IPFS distributed storage, creates a robust foundation for sustainable growth. The carefully designed tokenomics ensure fair value distribution among all participants while maintaining long-term economic viability.
+
+Most importantly, Fr0g.site returns control to the users. Through democratic governance, transparent operations, and economic incentives aligned with community interests, the platform empowers users to shape their own digital environment.
+
+As the digital landscape continues to evolve, Fr0g.site offers a compelling alternative to corporate-controlled platforms—one that prioritizes user sovereignty, free expression, and fair value distribution. The future of social media lies not in the hands of a few powerful corporations, but in the collective wisdom and participation of the global community.
+
+---
+
+## References
+
+*[References to be added based on technical implementations and industry standards]*
+
+1. EOS.IO Technical White Paper - https://github.com/EOSIO/Documentation
+2. IPFS Protocol Documentation - https://docs.ipfs.io/
+
+<!-- TODO: Add links to technical documentation and code repositories -->
+<!-- TODO: Add references to regulatory frameworks and legal precedents -->
 
 ---

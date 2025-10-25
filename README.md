@@ -5,7 +5,7 @@
 ---
 
 **Fr0g.site Team**  
-Contact: Fr0gsite@mailbox.org  
+Contact: Fr0gsite(at)mailbox.org  
 Version 2.1
 October 2025
 
